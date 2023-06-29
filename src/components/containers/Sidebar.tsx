@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import GenerateTabs from '../../services/GenerateTabs'
+import GenerateTabs from '../pures/GenerateTabs'
+import profileDefault from '../../assets/profile_default.png'
+
 
 interface Props {
     handle: (notFound: boolean) => void
@@ -16,8 +18,17 @@ const Sidebar = ({handle, notFound}: Props) => {
     }, [location.pathname, handle])
 
     return !notFound && (
-        <div>
+        <div className='flex flex-col justify-between h-screen py-4'>
             <GenerateTabs />
+            <div className='flex'>
+                <div>
+                    <img src={profileDefault} className='rounded-full' height='44px' width='44px' />
+                </div>
+                <div className='flex flex-col ml-3'>
+                    <span>Name</span>
+                    <span>Username</span>
+                </div>
+            </div>
         </div>
     )
 }
