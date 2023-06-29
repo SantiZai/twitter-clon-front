@@ -9,7 +9,7 @@ interface Props {
     notFound: boolean
 }
 
-const Sidebar = ({handle, notFound}: Props) => {
+const Sidebar = ({ handle, notFound }: Props) => {
     const location = useLocation()
 
     useEffect(() => {
@@ -18,15 +18,20 @@ const Sidebar = ({handle, notFound}: Props) => {
     }, [location.pathname, handle])
 
     return !notFound && (
-        <div className='flex flex-col justify-between h-screen py-4'>
+        <div className='flex flex-col items-end justify-between h-screen py-4 pr-5 w-1/3'>
             <GenerateTabs />
-            <div className='flex'>
-                <div>
-                    <img src={profileDefault} className='rounded-full' height='44px' width='44px' />
-                </div>
-                <div className='flex flex-col ml-3'>
-                    <span>Name</span>
-                    <span>Username</span>
+            <div className='w-full flex flex-col items-end'>
+                <div className='flex w-1/3'>
+                    <div>
+                        <img src={profileDefault} className='rounded-full' height='44px' width='44px' />
+                    </div>
+                    <div className='flex flex-col ml-3'>
+                        <span>Name</span>
+                        <span>Username</span>
+                    </div>
+                    <div>
+                        icono
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,13 @@
+.contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "profile more";
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.more {
+    grid-area: more;
+}

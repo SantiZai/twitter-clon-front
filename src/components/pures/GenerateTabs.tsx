@@ -15,7 +15,8 @@ const GenerateTabs = () => {
     ]
 
     return (
-        <div>
+        <div className='w-full flex flex-col items-end'>
+            <div className='w-1/3'>
                 <img src={twitterLogo} height='32px' width='32px' />
                 {
                     logos.map((logo, i) => {
@@ -28,6 +29,7 @@ const GenerateTabs = () => {
                     })
                 }
                 <button className='px-20 py-3 bg-red-100 rounded-3xl text-white font-bold' style={{ backgroundColor: '#1d9bf0' }}>Tweet</button>
+            </div>
         </div>
     )
 }

@@ -26,7 +26,7 @@ function App() {
 
   return (
     <Router>
-      <div className='flex'>
+      <div className='flex w-screen'>
         <Sidebar handle={handleNotFound} notFound={notFound} />
         <Routes>
           <Route path='/' element={<HomePage />} />
