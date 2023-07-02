@@ -1,13 +1,62 @@
 .contain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "profile more";
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 'profile more';
 }
 
 .profile {
-    grid-area: profile;
+	grid-area: profile;
+	border: 1px solid #eff3f4;
+}
+
+.topbar {
+    letter-spacing: .3x;
+}
+
+.tweets-count {
+    color: #7b8892;
 }
 
 .more {
-    grid-area: more;
+	grid-area: more;
+}
+
+.cover {
+	position: relative;
+	background: rgb(207, 217, 222);
+	background: linear-gradient(
+		0deg,
+		rgba(207, 217, 222, 1) 0%,
+		rgba(207, 217, 222, 1) 100%
+	);
+}
+
+.container-image {
+	position: absolute;
+	left: 0;
+	bottom: -30%;
+}
+
+.img-profile {
+    border: 4px solid;
+}
+
+.container-setup {
+	position: absolute;
+	right: 0;
+	bottom: -15%;
+	border: 1px solid #eff3f4;
+	padding: 2px 12px;
+	letter-spacing: -0.7px;
+}
+
+.tabs {
+	border-bottom: 1px solid #eff3f4;
+}
+
+.border-tab {
+	height: 3px;
+	width: 110%;
+	background-color: #1d9bf0;
+	border-radius: 6px;
 }

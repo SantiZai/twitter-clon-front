@@ -1,0 +1,13 @@
+.container-all {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "izq der";
+}
+
+.izq {
+    grid-area: izq;
+}
+
+.der {
+    grid-area: der;
+}

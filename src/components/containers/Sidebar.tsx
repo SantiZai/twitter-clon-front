@@ -2,14 +2,16 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import GenerateTabs from '../pures/GenerateTabs'
 import profileDefault from '../../assets/profile_default.png'
+import { User } from '../../interfaces/User'
 
 
 interface Props {
     handle: (notFound: boolean) => void
     notFound: boolean
+    user: User
 }
 
-const Sidebar = ({ handle, notFound }: Props) => {
+const Sidebar = ({ handle, notFound, user }: Props) => {
     const location = useLocation()
 
     useEffect(() => {
@@ -18,19 +20,19 @@ const Sidebar = ({ handle, notFound }: Props) => {
     }, [location.pathname, handle])
 
     return !notFound && (
-        <div className='flex flex-col items-end justify-between h-screen py-4 pr-5 w-1/3'>
+        <div className='flex flex-col justify-between h-screen py-4'>
             <GenerateTabs />
             <div className='w-full flex flex-col items-end'>
                 <div className='flex w-1/3'>
                     <div>
-                        <img src={profileDefault} className='rounded-full' height='44px' width='44px' />
+                        <img src={profileDefault} className='rounded-full' width='44px' />
                     </div>
                     <div className='flex flex-col ml-3'>
                         <span>Name</span>
-                        <span>Username</span>
+                        <span>{user.username}</span>
                     </div>
                     <div>
-                        icono
+                        icon
                     </div>
                 </div>
             </div>
