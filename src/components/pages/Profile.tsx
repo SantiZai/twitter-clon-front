@@ -1,6 +1,7 @@
 import { User } from '../../interfaces/User'
 import profileDefault from '../../assets/profile_default.png'
 import back from '../../assets/back-arrow.png'
+import search from '../../assets/search.png'
 import '../../profile_page.css'
 
 const Profile = ({ user }: { user: User }) => {
@@ -38,7 +39,6 @@ const Profile = ({ user }: { user: User }) => {
 						<span>followeds</span>
 					</div>
 				</div>
-				{/* tabs con los tweets */}
 				<div className="tabs w-full mt-3 flex justify-center items-center">
 					<div className='flex flex-col justify-center items-center'>
 						<div className='text-sm font-semibold'>Tweets</div>
@@ -47,7 +47,10 @@ const Profile = ({ user }: { user: User }) => {
 				</div>
 			</div>
 			<div className="more">
-				<h1>adassad</h1>
+				<div>
+					<img src={search} width="22px" />
+					<span>Seacrh Twitter</span>
+				</div>
 			</div>
 		</div>
 	)
