@@ -47,9 +47,9 @@ const Profile = ({ user }: { user: User }) => {
 				</div>
 			</div>
 			<div className="more">
-				<div>
+				<div className='flex w-2/3 py-2 px-4 rounded-3xl gap-3 justify-left border border-black'>
 					<img src={search} width="22px" />
-					<span>Seacrh Twitter</span>
+					<span>Search Twitter</span>
 				</div>
 			</div>
 		</div>
