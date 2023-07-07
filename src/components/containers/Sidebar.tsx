@@ -20,7 +20,7 @@ const Sidebar = ({ handle, notFound, user }: Props) => {
     }, [location.pathname, handle])
 
     return !notFound && (
-        <div className='flex flex-col justify-between h-screen py-4'>
+        <div className='flex flex-col justify-between h-screen py-4 pr-8'>
             <GenerateTabs />
             <div className='w-full flex flex-col items-end'>
                 <div className='flex w-1/3'>

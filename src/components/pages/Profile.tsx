@@ -46,8 +46,8 @@ const Profile = ({ user }: { user: User }) => {
 					</div>
 				</div>
 			</div>
-			<div className="more">
-				<div className='flex w-2/3 py-2 px-4 rounded-3xl gap-3 justify-left border border-black'>
+			<div className="more w-full my-1 pl-8">
+				<div className='search-tab flex py-2 px-4 rounded-3xl gap-3 justify-left border border-black'>
 					<img src={search} width="22px" />
 					<span>Search Twitter</span>
 				</div>
