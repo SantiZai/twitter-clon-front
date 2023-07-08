@@ -13,7 +13,7 @@ const Profile = ({ user }: { user: User }) => {
 						<img src={back} width="22px" />
 					</div>
 					<div className="flex flex-col justify-center">
-						<span className="topbar text-xl font-semibold">{user.username}</span>
+						<span className="text-xl font-semibold">{user.username}</span>
 						<span className="tweets-count text-xs">1 Tweet</span>
 					</div>
 				</div>
