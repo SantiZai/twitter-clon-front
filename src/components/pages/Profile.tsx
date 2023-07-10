@@ -8,8 +8,8 @@ const Profile = ({ user }: { user: User }) => {
 	return (
 		<div className="contain h-full w-full">
 			<div className="flex flex-col profile">
-				<div className="flex h-10 my-1">
-					<div className="flex justify-center py-2 pl-2 pr-5">
+				<div className="flex h-10 my-2">
+					<div className="flex justify-center py-2 pl-4 pr-5">
 						<img src={back} width="22px" />
 					</div>
 					<div className="flex flex-col justify-center">
@@ -19,7 +19,7 @@ const Profile = ({ user }: { user: User }) => {
 				</div>
 				<div className="cover h-60 flex flex-col mb-20">
 					<div className="flex justify-between items-center">
-						<div className="container-image ml-3">
+						<div className="container-image ml-4">
 							<img
 								className="img-profile border-white rounded-full"
 								width="140px"
@@ -31,7 +31,7 @@ const Profile = ({ user }: { user: User }) => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col ml-3 text-xl mt-2">
+				<div className="flex flex-col ml-4 text-xl mt-2">
 					<span className="font-semibold">{user.username}</span>
 					<span>@{user.username}</span>
 					<div className="flex gap-3 text-sm">

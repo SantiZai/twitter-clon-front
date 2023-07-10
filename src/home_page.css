@@ -1,0 +1,29 @@
+.contain-home {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "home happening";
+}
+
+.home {
+	grid-area: home;
+	border: 1px solid #eff3f4;
+}
+
+.happening {
+	grid-area: happening;
+}
+
+.tabs {
+	border-bottom: 1px solid #eff3f4;
+}
+
+.border-tab {
+	height: 3px;
+	width: 110%;
+	background-color: #1d9bf0;
+	border-radius: 6px;
+}
+
+.search-tab {
+	width: 350px;
+}
