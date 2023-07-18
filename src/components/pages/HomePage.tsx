@@ -1,6 +1,6 @@
 import profileDefault from '../../assets/profile_default.png'
-import search from '../../assets/search.png'
 import '../../home_page.css'
+import SearchBar from '../pures/SearchBar'
 
 const HomePage = () => {
     return (
@@ -29,10 +29,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="happening my-1 pl-8">
-                <div className='search-tab flex py-2 px-4 rounded-3xl gap-3 justify-left border border-black'>
-                    <img src={search} width="22px" />
-                    <span>Search Twitter</span>
-                </div>
+                <SearchBar />
             </div>
         </div>
     )

@@ -1,0 +1,12 @@
+.search-bar {
+    width: 350px;
+    border: 1px solid gray;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.div-focus {
+    border-color: black;
+}
